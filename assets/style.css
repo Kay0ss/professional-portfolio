@@ -128,7 +128,8 @@ section .work-title{
 
 footer{
     position:relative;
-    top: 700px;
+    top: 800px;
     text-align:center;
     color:var(--text);
+    padding-bottom: 15px;
 }
