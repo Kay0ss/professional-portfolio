@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
@@ -29,14 +30,69 @@
                 <h2>About Me</h2>
             <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente pariatur fuga quis et quisquam unde, facere molestias fugiat a, quo esse, ullam cupiditate! Blanditiis optio dolor similique praesentium vero inventore cumque voluptas in nulla id! Fuga esse maxime facilis, voluptatibus iste cupiditate, est deleniti voluptates eaque sequi consectetur earum! Porro voluptate soluta tempore ipsum dolor!</p>
          </section>
-       
+<!--        
          <section id="my-work">
                 <h3 class="work-title">Work</h3>
                     <figure class="work">
+                        <a href="https://kay0ss.github.io/semantic-tagging/">
                         <img id="semantic" src="./assets/semantic.png" alt="image of semantic tagging" />
-                        <img id="flexbox" src="./assets/flexbox.png" alt="image of a flexbox site I made" />
-                        <img id="mini" src="./assets/mini.png" alt="image of the first site I made" />
+                        </a>
+                        <a href="https://kay0ss.github.io/Code-Quiz/">
+                        <img id="quiz" src="./assets/flexbox.png" alt="image of a flexbox site I made" />
+                        </a>
+                        <img id="mini" src="./assets/mini.png"  alt="image of the first site I made" />
                     </figure>
+            </section> -->
+
+                <!-- ToDo:
+               - add additional buttons to work cards, one for source code leading to github repo, and another for active site.
+               - take replacement pictures for each repo
+               - DELETE THIS COMMENT WHEN YOU'RE DONE -->
+
+            <!-- NEW -->
+            <section id="my-work">
+                <div id="cards" class="card text-center" style="width: 18rem;">
+                    <img src="./assets/semantic.jpeg" class="card-img-top" alt="screenshot of my semantic tagging project">
+                    <div class="card-body">
+                      <h5 class="card-title">Semantic Tagging Project</h5>
+                      <p class="card-text">Basic semantic tagging for my first project.</p>
+                      <a href="https://github.com/Kay0ss/semantic-tagging" id="work-btn" class="btn btn-dark">Repository</a>
+                      <a href="https://kay0ss.github.io/semantic-tagging/" id="work-btn" class="btn btn-dark">Live Site</a>
+                    </div>
+                  </div>
+
+                  <div id="cards" class="card text-center" style="width: 18rem;">
+                    <img src="./assets/codequiz.jpeg" class="card-img-top" alt="screenshot of code quiz project">
+                    <div class="card-body">
+                      <h5 class="card-title">Code Quiz Project</h5>
+                      <p class="card-text">My first project on my own, a simple quiz.</p>
+                      <a href="https://github.com/Kay0ss/Code-Quiz" id="work-btn" class="btn btn-dark">Repository</a>
+                      <a href="https://kay0ss.github.io/Code-Quiz/" id="work-btn" class="btn btn-dark">Live Site</a>
+                    </div>
+                  </div>
+
+                  <div id="cards" class="card text-center" style="width: 18rem;">
+                    <img src="./assets/flexbox.jpeg" class="card-img-top" alt="screenshot of flex box project">
+                    <div class="card-body">
+                      <h5 class="card-title">Flex Box Project</h5>
+                      <p class="card-text">A group project including the basics of flexbox.</p>
+                      <a href="#" id="work-btn" class="btn btn-dark">Repository</a>
+                      <a href="#" id="work-btn" class="btn btn-dark">Live Site</a>
+                    </div>
+                  </div>
+
+                  <div id="cards" class="card text-center" style="width: 18rem;">
+                    <img src="./assets/starwarsquiz.jpeg" class="card-img-top" alt="Star Wars quiz I did the styling for">
+                    <div class="card-body">
+                      <h5 class="card-title">Star Wars Quiz</h5>
+                      <p class="card-text">A Star Wars group project I took part in.</p>
+                      <a href="https://github.com/ColeEnyart/which-star-wars-character-are-you" id="work-btn" class="btn btn-dark">Repository</a>
+                      <a href="https://coleenyart.github.io/which-star-wars-character-are-you/" id="work-btn" class="btn btn-dark">Live Site</a>
+                    </div>
+                  </div>
+
+
+
             </section>
     </main>
             <figure class="contact">
@@ -46,7 +102,7 @@
             </figure>
 </body>
     <footer>
-        <p> Thank you for visiting the site!🖤</p>
+        <p>Copyright: 2021 Jack Theisen</p>
     </footer>
 </html>
 
