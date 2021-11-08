@@ -5,55 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/reset.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 <body>
     <header>
-        <h1>JACK THEISEN</h1>
-           <nav>
-            <ul>
-                <li class="navigation"><a href="#about-title">About</a></li>
-                <li class="navigation"><a href="#my-work">Work</a></li>
-                <li class="navigation"><a class="mailto" href="mailto:jackschoolbiz@gmail.com">Contact</a></li>
-                <li class="navigation"><a href="https://github.com/Kay0ss" target="_blank">Github</a></li>
-                <li class="navigation"><a href="https://www.linkedin.com/in/jack-theisen-142669212/" target="_blank">Linkedin</a></li>
-                <li class="navigation"><a href="./assets/john-theisen-resume.pdf" target="_blank">Resume</a></li> 
-            </ul>
-            </nav> 
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">JT</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item hover">
+                      <a class="hover active" href="#about-title">About</a>
+                    </li>
+                    <li class="nav-item hover">
+                      <a class="" href="#my-work">Projects</a>
+                    </li>
+                    <li class="nav-item hover">
+                      <a class="" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item hover">
+                    <a class="" href="#">Resume</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
     </header>
 
     <main>
-        <figure id="mainlogo">
+        <!-- <figure id="mainlogo">
         <img class="logo" src="./assets/profile.PNG" alt="my logo"/>
-       </figure>
-        
+       </figure> -->
+      <figure class="wrapper">
+        <div class="typing-demo">
+          Welcome, my name's Jack and I like to build stylish websites.
+        </div>
+      </figure>
+
+        <hr>
         <section id="about-title">  
-                <h2>About Me</h2>
-            <p class="about-me">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente pariatur fuga quis et quisquam unde, facere molestias fugiat a, quo esse, ullam cupiditate! Blanditiis optio dolor similique praesentium vero inventore cumque voluptas in nulla id! Fuga esse maxime facilis, voluptatibus iste cupiditate, est deleniti voluptates eaque sequi consectetur earum! Porro voluptate soluta tempore ipsum dolor!</p>
+          <div id="about-me" class="container-fluid">
+            <div class="row" style="padding-top: 50px">
+              <div class="col-md-10">
+                <h4>ABOUT ME</h4>
+                <p id="grabber">I believe there are so many things in this world that are yet to be done and so many new stories to be told. My goal in life is to capture those incredible moments and ensure they live on forever. </p><br>
+                <p>I am a developer based in Minnesota, focused on advancing my career farther into the development field. I am currently attending a full stack course at the University of Minnesota, with the intention on graduatiing as a junior full stack web developer. I absolutely love people, I love working with them, being around them, and leading them. Coming form 5 years of customer service and management background I would say I have had a decent share of just about everything in some shape or form. </p>
+                <!-- <p>I love anything that involves interacting with people, whether it is a fun movie night, leading a team, or being in  a team of individuals.</p><br> -->
+        
+              </div>  
+
+
+              <div class="col-md-2 text-center">
+                <img id="myPic" src="./assets/me.jpeg" class="img-round"></img>
+              </div>
+            </div>
+          </div>
          </section>
-<!--        
-         <section id="my-work">
-                <h3 class="work-title">Work</h3>
-                    <figure class="work">
-                        <a href="https://kay0ss.github.io/semantic-tagging/">
-                        <img id="semantic" src="./assets/semantic.png" alt="image of semantic tagging" />
-                        </a>
-                        <a href="https://kay0ss.github.io/Code-Quiz/">
-                        <img id="quiz" src="./assets/flexbox.png" alt="image of a flexbox site I made" />
-                        </a>
-                        <img id="mini" src="./assets/mini.png"  alt="image of the first site I made" />
-                    </figure>
-            </section> -->
+         <hr>
 
-                <!-- ToDo:
-               - add additional buttons to work cards, one for source code leading to github repo, and another for active site.
-               - take replacement pictures for each repo
-               - DELETE THIS COMMENT WHEN YOU'RE DONE -->
+         <section id="my-work">  
+          <div id="work" class="container-fluid">
+            <div class="row" style="padding-top: 50px">
+              <div class="col-md-12">
+                <h4>SOME OF MY WORK</h4>
+              </div>
+              <div class="items-container col-lg-8 col-sm-4 col-xs-6">
+                <div class="cptn17">
+                    <img src="http://lorempixel.com/350/263/" alt="">
+                    <div class="cptn">
+                        <div>
+                            <h3>Semantic Tagging</h3>
+                            <p>By John Doe.</p>
+                        </div>
+                        <a href="#" class="fa fa-long-arrow-right">Page</a>
+                        <a href="#" class="fa fa-long-arrow-right">Repo</a>
+                    </div>
+                </div>
+                <div class="cptn17">
+                  <img src="http://lorempixel.com/350/263/" alt="">
+                  <div class="cptn">
+                      <div>
+                          <h3>Semantic Tagging</h3>
+                          <p>By John Doe.</p>
+                      </div>
+                      <a href="#" class="fa fa-long-arrow-right">Page</a>
+                      <a href="#" class="fa fa-long-arrow-right">Repo</a>
+                  </div>
+                </div>
+              </div>
 
+            </div>
+            </div>
+          </div>
+        </section>
             <!-- NEW -->
-            <section id="my-work">
+            <!-- <section id="my-work">
                 <div id="cards" class="card text-center" style="width: 18rem;">
                     <img src="./assets/semantic.jpeg" class="card-img-top" alt="screenshot of my semantic tagging project">
                     <div class="card-body">
@@ -92,11 +141,13 @@
                       <a href="https://github.com/ColeEnyart/which-star-wars-character-are-you" id="work-btn" class="btn btn-dark">Repository</a>
                       <a href="https://coleenyart.github.io/which-star-wars-character-are-you/" id="work-btn" class="btn btn-dark">Live Site</a>
                     </div>
-                  </div>
+                  </div> -->
+
+            
 
 
 
-            </section>
+          </section>
     </main>
             <figure class="contact">
                 <form action="action_page.php">
